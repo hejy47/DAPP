@@ -28,58 +28,58 @@
 
   2. 按照搭建的区块链的地址修改truffle-config.js中的地址（默认为127.0.0.1:8545），然后在根目录输入truffle migrate( --reset)把合约部署到区块链上。
 
-    ![1546159961045](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546159961045.png)
+    ![1546159961045](../img/1546159961045.png)
 
-    ![1546160005668](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546160005668.png)
+    ![1546160005668](../img/1546160005668.png)
 
   3. 在根目录上输入npm run dev启动lite-server服务器，监听app和合约，之后便可在浏览器输入localhost:3000访问。
 
-    ![1546160140139](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546160140139.png)
+    ![1546160140139](../img/1546160140139.png)
 
-    ![1546160175138](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546160175138.png)
+    ![1546160175138](../img/1546160175138.png)
 
   4. 插件metamask连接区块链，通过Custom RPC加入区块链地址，并通过账户私钥导入区块链账户。
 
-    ![1546160498617](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546160498617.png)
+    ![1546160498617](../img/1546160498617.png)
 
-    ![1546160557283](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546160557283.png)
+    ![1546160557283](../img/1546160557283.png)
 
 4. 测试
 
   - 新建财务信息：在输入框输入对应的信息提交，并在弹出的窗口确认便可得到。
 
-    ![1546179391837](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546179391837.png)
+    ![1546179391837](../img/1546179391837.png)
 
-    ![1546162350725](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546162350725.png)
+    ![1546162350725](../img/1546162350725.png)
 
-    ![1546180586261](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546180586261.png)
+    ![1546180586261](../img/1546180586261.png)
 
     点击后便可直接进入详情页面。
 
-    ![1546181539275](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546181539275.png)
+    ![1](../img/1.png)
 
   - 添加用户地址到本地，以免忘记账户地址而无法调用。
 
-    ![1546181094461](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546181094461.png)
+    ![1546181094461](../img/1546181094461.png)
 
   - 请求用户确认：添加账户过后便可直接通过用户名请求确认，这里请求三个账户则要三次metamask确认。
 
-    ![1546181290353](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546181290353.png)
+    ![1546181290353](../img/1546181290353.png)
 
   - 确认后便可切换用户进行确认（同意或者反对，反对则需要输入意见）。
 
-    ![1546182025749](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546182025749.png)
+    ![1546182025749](../img/1546182025749.png)
 
     提交意见后便会在右侧弹出意见。
 
-    ![1546182469772](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546182469772.png)
+    ![1546182469772](../img/1546182469772.png)
 
   - 获取意见（只有财务信息提交者才有权利看到所有意见，其余人不能看到）。
 
-    ![1546184490683](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546184490683.png)
+    ![1546184490683](../img/1546184490683.png)
 
   - 统计结果：根据确认人数来判断该财务信息是否通过，按照规定，需要在一天之后才能统计，并且只有发起者才能统计，否则会报错。
 
-    ![1546184767588](C:\Users\10946\AppData\Roaming\Typora\typora-user-images\1546184767588.png)
+    ![1546184767588](../img/1546184767588.png)
 
     如图，提前确认则会回滚并报错。
