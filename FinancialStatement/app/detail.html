@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="styles/detail.css">
+</head>
+
+<body>
+    <nav class="list-nav">
+        <button class="show all">></button>
+        <ul id="list">
+            <li><a href="index.html"><span class="label">HOME</span></a></li>
+        </ul>
+        <div id="help"></div>
+    </nav>
+    <div id="add">
+        <div id="adduser">
+            <input id="username" type="text" name="username" placeholder="username">
+            <input id="useraccount" type="text" name="useraddress" placeholder="account">
+            <button id="adduser-button">adduser</button>
+            <p id="add-tip">你可以添加用户地址到本地。</p>
+        </div>
+        <span class="icon down"></span>
+    </div>
+    <div id="content">
+        <ul id="decision">
+            <li id="request">请求确认</li>
+            <li id="agree">同意</li>
+            <li id="oppose">反对</li>
+            <li id="getopinions">获取意见</li>
+            <li id="result">统计结果</li>
+        </ul>
+        <div id="box">
+            <div id="oppose-box">
+                <textarea id="opinion" type="text" name="意见"></textarea>
+                <button id="cancel">取消</button>
+                <button id="confirm">确认</button>
+            </div>
+            <div id="useraddress-box">
+                <button id="cancel-request">取消</button>
+                <button id="confirm-request">请求</button>
+            </div>
+        </div>
+        <div id="tity">
+            <div id="type">支</div>
+            <div id="title">title</div>
+            <div id="subtime">time</div>
+            <div id="status">waiting</div>
+            <div id="count">5/15</div>
+        </div>
+        <p id="detail">detail</p>
+    </div>
+    <div id="alert">
+        <ul id="opinions">
+            <li>您没有权利查看意见。</li>
+            <button id="IK">I know</button>
+        </ul>
+    </div>
+    <div id="slide1">Success!</div>
+    <div id="slide2"></div>
+
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/jquery-ui.js"></script>
+    <script src="./scripts/Tools.js"></script>
+    <!-- <script src="./scripts/web3.min.js"></script> -->
+    <script src="./scripts/truffle-contract.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/detail.js"></script>
+</body>
+
+</html>

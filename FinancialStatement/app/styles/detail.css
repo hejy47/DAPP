@@ -1,0 +1,374 @@
+* {
+    outline: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F0F3F4;
+}
+
+li {
+    list-style: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list-nav {
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 10%;
+    background-color: white;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.show {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background-color: white;
+    border: 0px;
+}
+
+#list {
+    padding: 0px;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+}
+
+#list li {
+    display: block;
+    margin-bottom: 2px;
+}
+
+#list li a {
+    text-decoration: none;
+}
+
+#list li a:visited {
+    color: #EE6633;
+}
+
+#list li a:hover {
+    color: rgb(160,20,20);
+}
+
+#help {
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    vertical-align: middle;
+}
+
+#adduser {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+#username {
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#useraccount {
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#adduser-button {
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #F0F3F4;
+}
+
+#adduser-button:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+#add,
+#add-sp {
+    width: 70%;
+    background-color: white;
+    margin: 0px auto;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#add-tip {
+    margin: 0px auto;
+    padding-top: 5px;
+    font-size: 10pt;
+    text-align: center;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.icon {
+    display: block;
+    height: 16px;
+    width: 16px;
+    background-image: url(https://static.hotjar.com/static/client/modules/assets/widget_icons_light.png);
+    margin: 0px auto;
+}
+
+.down {
+    background-position: -32px 0;
+}
+
+#content {
+    width: 70%;
+    margin: 0px auto;
+}
+
+#decision {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+#decision li {
+    width: 80px;
+    display: inline-block;
+    background-color: white;
+    font-size: 11pt;
+    color: rgb(150, 150, 150);
+    border-radius: 5px;
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 0px 0px 2px rgb(230, 230, 230);
+}
+
+#decision li:hover {
+    color: rgb(180, 20, 20);
+    border-color: rgb(180, 20, 20);
+}
+
+#box {
+    height: 150px;
+    display: none;
+}
+
+#oppose-box,
+#useraddress-box {
+    display: none;
+    width: 80%;
+    margin: 0px auto;
+    border: 1px solid black;
+    position: relative;
+    overflow: auto;
+    height: 150px;
+    border-radius: 5px;
+    border:1px solid rgb(150, 150, 150);
+    box-shadow: 0px 0px 2px rgb(150, 150, 150);
+    background-color: white;
+}
+
+#opinion {
+    margin: 0px auto;
+    display: block;
+    width: 95%;
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240);
+    margin-top: 10px;
+}
+
+#cancel {
+    position: absolute;
+    left: 20%;
+    top: 110px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+}
+
+#cancel:hover {
+    background-color: rgb(230, 0, 0);
+}
+
+#confirm {
+    position: absolute;
+    right: 20%;
+    top: 110px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgb(0, 220, 0);
+    background-color: rgb(0, 220, 0);
+}
+
+#confrim:hover {
+    background-color: rgb(0, 200, 0);
+}
+
+.accounts {
+    display: inline-block;
+    border: 1px solid black;
+    background-color: #F0F3F4;
+    margin: 8px;
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid rgb(240, 240, 240);
+    color: rgb(120, 120, 120);
+}
+
+#cancel-request {
+    position: absolute;
+    right: 60px;
+    bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+}
+
+#cancel-request:hover {
+    background-color: rgb(230, 0, 0);
+}
+
+#confirm-request {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgb(0, 220, 0);
+    background-color: rgb(0, 220, 0);
+}
+
+#confirm-request:hover {
+    background-color: rgb(0, 200, 0);
+}
+
+#tity {
+    position: relative;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#type {
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#title {
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: bottom;
+    color: rgb(120, 120, 120);
+}
+
+#status {
+    position: absolute;
+    color: rgb(180, 180, 180);
+    right: 40px;
+    top: 5px;
+    font-size: 10pt;
+    background-color: yellow;
+    height: 20px;
+    font-size: 12pt;
+}
+
+#count {
+    position: absolute;
+    color: rgb(200, 200, 200);
+    right: 5px;
+    top: 5px;
+    font-size: 10pt;
+}
+
+#subtime {
+    position: absolute;
+    color: rgb(200, 200, 200);
+    right: 5px;
+    bottom: 5px;
+}
+
+#detail {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(120, 120, 120);
+    height: 550px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+#alert {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+    display: none;
+    opacity: 0.88;
+}
+
+#opinions {
+    position: fixed;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    border: 1px solid rgb(180, 180, 180);
+    display: none;
+    /*list-style: initial;*/
+}
+
+#opinions li {
+    margin: 10px auto;
+    display: block;
+}
+
+#IK {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#slide1,
+#slide2 {
+    position: absolute;
+    ;
+    width: 120px;
+    background-color: yellow;
+    font-size: 15pt;
+    text-align: center;
+    ;
+    right: 0px;
+    top: 200px;
+    display: none;
+    color: rgb(100, 100, 100);
+}
+
+#slide2 {
+    top: 250px;
+}

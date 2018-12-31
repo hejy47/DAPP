@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>StatementTable</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <h1>财务报表</h1>
+    <div id="sub_fin">
+        <section>
+            <div id="hint">请输入你的财务信息</div>
+            <br>
+            <select id="type">
+                <option value="支">支出</option>
+                <option value="支">收入</option>
+            </select>
+            <select id="time">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <span id="time-hint">确认时间(天):</span>
+            <br>
+            <input type="text" id="fin" name="fin" placeholder="财务信息简要" required>
+            <br>
+            <textarea id="fin_det" type="text" name="fin_det" placeholder="财务信息详情"></textarea>
+            <br>
+            <button id="cancel">cancel</button>
+            <button id="submit">submit</button>
+        </section>
+    </div>
+    <div class="content">
+        <div id="todo">
+            <h3 id="todo-hint" class="todo before">require</h3>
+            <ol id="todo-list">
+            </ol>
+        </div>
+        <div id="done">
+            <h3 id="done-hint" class="done before">done</h3>
+            <ol id="done-list">
+            </ol>
+        </div>
+    </div>
+    <button id="new">新建财务信息</button>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/Tools.js"></script>
+    <!-- <script src="./scripts/web3.min.js"></script> -->
+    <script src="./scripts/truffle-contract.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

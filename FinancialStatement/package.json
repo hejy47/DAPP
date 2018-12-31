@@ -1,0 +1,21 @@
+{
+  "name": "financialstatement",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.4.0",
+    "web3": "^0.20.6"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "description": ""
+}
